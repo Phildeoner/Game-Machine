@@ -1,6 +1,12 @@
 //Game MAchine
 // A Machine to accept score as number input and give a remark.
 
+const btn = document.querySelector("#btn");
+const notice = document.querySelector("p");
+const input = document.querySelector("input");
+const remark = document.querySelector("h4");
+const viewRemark = document.querySelector("#viewRemark");
+
 //Create a function machineStatus to start and stop machine using a button.
 function machineStatus() {
     if(btn.textContent === "Start Game machine"){
