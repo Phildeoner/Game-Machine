@@ -12,5 +12,7 @@ function machineStatus() {
           notice.textContent = "The Game machine is stopped!.";
     } 
   }
+
+  btn.addEventListener("click", machineActive);
 //create a function machineStopped to stop processing inputs when machine is stopped.
 //create a function processRemark to give remark for each range of inputted score.
