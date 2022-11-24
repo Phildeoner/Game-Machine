@@ -6,10 +6,12 @@ function machineStatus() {
     if(btn.textContent === "Start Game machine"){
           btn.textContent = "Stop Game machine";
           notice.textContent = "The Game machine has started!"
+          viewRemark.addEventListener("click", processRemark);
             
     } else{
           btn.textContent = "Start Game machine"
           notice.textContent = "The Game machine is stopped!.";
+          viewRemark.addEventListener("click", machineStopped);
     } 
   }
 
@@ -41,5 +43,4 @@ function processRemark(){
     }
 }
 
-viewRemark.addEventListener("click", processRemark);
 btn.addEventListener("click", machineStatus);
