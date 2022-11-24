@@ -14,6 +14,13 @@ function machineStatus() {
   }
 
 //create a function machineStopped to stop processing inputs when machine is stopped.
+function machineStopped(){
+    if (notice.textContent === "The Game machine is stopped!."){
+        remark.textContent = "Start Game Machine to Continue, The Game machine is stopped!.";
+    } else{
+        processRemark();
+    }
+}
 //create a function processRemark to give remark for each range of inputted score.
 function processRemark(){
     const choice = parseInt(input.value);
@@ -35,4 +42,4 @@ function processRemark(){
 }
 
 viewRemark.addEventListener("click", processRemark);
-btn.addEventListener("click", machineActive);
+btn.addEventListener("click", machineStatus);
